@@ -27,3 +27,33 @@ a {
     color: white;
     text-decoration: none;
 }
+
+section {
+    margin: 20px;
+}
+
+section h2 {
+    color: #3f3f3f;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section li {
+    margin: 10px 0;
+}
+
+section a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3f3f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section a:hover {
+    background-color: #3f3f3f;
+}
