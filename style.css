@@ -11,6 +11,7 @@ body {
 header {
     background-color: #7e7e7e;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 1em 0;
     text-align: center;
 }
@@ -27,6 +28,7 @@ header li {
 
 a {
     color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
@@ -36,6 +38,7 @@ section {
 
 section h2 {
     color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 section ul {
@@ -52,6 +55,7 @@ section a {
     padding: 10px 15px;
     background-color: #3f3f3f;
     color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -63,7 +67,8 @@ section a:hover {
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-    color: #333;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
 }
@@ -71,12 +76,14 @@ body {
 header {
     background-color: #7e7e7e;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 1em 0;
     text-align: center;
 }
 
 nav a {
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -108,6 +115,7 @@ form textarea {
 button {
     background-color: #535353;
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -122,6 +130,7 @@ button:hover {
 a {
     color: white;
     text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 a:hover {
