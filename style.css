@@ -1,10 +1,9 @@
 body {
-    background-image: url('bilder/me.jfif'); /* Pfad zum Bild */
-    background-size: cover;         /* Bild wird skaliert, um den gesamten Bereich zu bedecken */
-    background-position: center;    /* Bild zentrieren */
-    background-repeat: no-repeat;   /* Verhindert, dass das Bild wiederholt wird */
-    background-attachment: fixed;   /* Hintergrund bleibt beim Scrollen fixiert */
-    color: black;                   /* Textfarbe anpassen, damit er lesbar bleibt */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: white;
 }
 
 
@@ -27,7 +26,7 @@ header li {
 }
 
 a {
-    color: black;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
@@ -37,7 +36,7 @@ section {
 }
 
 section h2 {
-    color: black;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -54,7 +53,7 @@ section a {
     display: inline-block;
     padding: 10px 15px;
     background-color: #3f3f3f;
-    color: black;
+    color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     border-radius: 5px;
