@@ -139,7 +139,7 @@ button:hover {
     margin: 20px auto;
     padding: 20px;
     background-color: black;    /* Weißer Hintergrund für Kontrast */
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;               /* Dunkle Textfarbe für Lesbarkeit */
     text-shadow: none;         /* Kein Textschatten für Formular-Inhalt */
