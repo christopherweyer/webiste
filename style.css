@@ -1,26 +1,28 @@
+/* Allgemeine Styles für den gesamten Body */
 body {
-    background-image: url('bilder/me.jfif'); /* Pfad zum Bild */
-    background-size: cover;         /* Bild wird skaliert, um den gesamten Bereich zu bedecken */
-    background-position: center;    /* Bild zentrieren */
-    background-repeat: no-repeat;   /* Verhindert, dass das Bild wiederholt wird */
-    background-attachment: fixed;   /* Hintergrund bleibt beim Scrollen fixiert */
-    color: white;  
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);            
+    background-image: url('bilder/me.jfif'); /* Pfad zum Hintergrundbild */
+    background-size: cover;                  /* Bild skaliert den gesamten Bereich */
+    background-position: center;             /* Bild zentrieren */
+    background-repeat: no-repeat;            /* Bildwiederholung verhindern */
+    background-attachment: fixed;            /* Hintergrund bleibt beim Scrollen fixiert */
+    color: white;                            /* Standardtextfarbe */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten für Lesbarkeit */
 }
 
-
+/* Header-Styling */
 header {
-    background-color: #7e7e7e;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 2;
-    padding: 2;
-    text-align: center;
+    background-color: #7e7e7e; /* Hintergrundfarbe */
+    color: white;               /* Textfarbe */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten */
+    margin: 0;                  /* Korrektur: Margin sollte 0 sein, um Layout zu stabilisieren */
+    padding: 20px;              /* Einheitliches Padding für besseren Abstand */
+    text-align: center;         /* Zentrierter Text */
 }
 
 header ul {
     list-style: none;
     padding: 0;
+    margin: 0;                  /* Entferne zusätzlichen Außenabstand */
 }
 
 header li {
@@ -28,14 +30,16 @@ header li {
     margin: 0 15px;
 }
 
-a {
+header a {
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
+/* Abschnitt-Styling */
 section {
     margin: 20px;
+    padding: 20px;              /* Mehr Innenabstand für Konsistenz */
 }
 
 section h2 {
@@ -60,19 +64,51 @@ section a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;  /* Sanfter Übergang für Hover */
 }
 
 section a:hover {
-    background-color: black;
+    background-color: black;   /* Hintergrundfarbe beim Überfahren */
 }
 
-/*Styling für kontaktseite*/
-
-#Kontaktaufnahme {
+/* Spezifische Styles für die Kontaktseite */
+#kontakt {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff;    /* Weißer Hintergrund für Kontrast */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;               /* Dunkle Textfarbe für Lesbarkeit */
+    text-shadow: none;         /* Kein Textschatten für Formular-Inhalt */
+}
+
+#kontakt label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;               /* Textfarbe für die Formular-Beschriftungen */
+}
+
+#kontakt input,
+#kontakt textarea {
+    width: 100%;               /* Volle Breite */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#kontakt button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#kontakt button:hover {
+    background-color: #0056b3;
 }
