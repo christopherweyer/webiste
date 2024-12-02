@@ -71,6 +71,23 @@ section a:hover {
     background-color: black;   /* Hintergrundfarbe beim Überfahren */
 }
 
+/*index style */
+#content-box {
+    max-width: 800px;                    /* Begrenzte Breite für besseren Fokus */
+    margin: 20px auto;                   /* Zentrierung des Inhalts */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund mit Transparenz */
+    border-radius: 10px;                 /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Leichter Schatten für Tiefe */
+    color: white;                        /* Textfarbe */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten */
+}
+
+section h2 {
+    text-align: center;                 /* Überschrift zentrieren */
+    margin-bottom: 15px;
+}
+
 /* Spezifische Styles für die Kontaktseite */
 #kontakt {
     max-width: 600px;
