@@ -66,16 +66,7 @@ section a:hover {
     background-color: black;
 }
 
-/*Styling für kontakt.html*/
-
-#kontakt {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 2;
-    padding: 2;
-}
+/*Styling für kontaktseite*/
 
 #Kontaktaufnahme {
     max-width: 600px;
