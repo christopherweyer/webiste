@@ -4,7 +4,7 @@ body {
     background-position: center;    /* Bild zentrieren */
     background-repeat: no-repeat;   /* Verhindert, dass das Bild wiederholt wird */
     background-attachment: fixed;   /* Hintergrund bleibt beim Scrollen fixiert */
-    color: rgb(0, 0, 0);                   /* Textfarbe anpassen, damit er lesbar bleibt */
+    color: black;                   /* Textfarbe anpassen, damit er lesbar bleibt */
 }
 
 
@@ -26,7 +26,7 @@ header li {
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
 }
 
@@ -35,7 +35,7 @@ section {
 }
 
 section h2 {
-    color: #000000;
+    color: black;
 }
 
 section ul {
@@ -51,11 +51,11 @@ section a {
     display: inline-block;
     padding: 10px 15px;
     background-color: #3f3f3f;
-    color: rgb(0, 0, 0);
+    color: black;
     text-decoration: none;
     border-radius: 5px;
 }
 
 section a:hover {
-    background-color: #000000;
+    background-color: black;
 }
