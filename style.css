@@ -1,13 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #222222;
-    color: white;
+    background-image: url('bilder/me.jfif'); /* Pfad zum Bild */
+    background-size: cover;         /* Bild wird skaliert, um den gesamten Bereich zu bedecken */
+    background-position: center;    /* Bild zentrieren */
+    background-repeat: no-repeat;   /* Verhindert, dass das Bild wiederholt wird */
+    background-attachment: fixed;   /* Hintergrund bleibt beim Scrollen fixiert */
+    color: white;                   /* Textfarbe anpassen, damit er lesbar bleibt */
 }
 
+
 header {
-    background-color: #009154;
+    background-color: #7e7e7e;
     color: white;
     padding: 1em 0;
     text-align: center;
