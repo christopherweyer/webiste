@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="Zertifikate.html">Lebenslauf & Zertifikate</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact-form">
+            <h2>Schreib mir eine Nachricht</h2>
+            <form action="mailto:c.weyer1@web.de" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Deine E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+
+        <section id="email-info">
+            <h2>Direkte Kontaktaufnahme</h2>
+            <p>Du kannst mir auch direkt eine E-Mail schreiben:</p>
+            <p><a href="mailto:c.weyer1@web.de">c.weyer1@web.de</a></p>
+        </section>
+    </main>
+</body>
+</html>
