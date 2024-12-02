@@ -9,31 +9,44 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten für Lesbarkeit */
 }
 
-/* Header-Styling */
+/* Einheitlicher Header-Stil */
 header {
-    background-color: #7e7e7e; /* Hintergrundfarbe */
-    color: white;               /* Textfarbe */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten */
-    margin: 0;                  /* Korrektur: Margin sollte 0 sein, um Layout zu stabilisieren */
-    padding: 20px;              /* Einheitliches Padding für besseren Abstand */
-    text-align: center;         /* Zentrierter Text */
+    background-color: #7e7e7e;          /* Hintergrundfarbe */
+    padding: 20px 0;                    /* Vertikaler Abstand */
+    text-align: center;                 /* Text zentrieren */
+    border-bottom: 3px solid #3f3f3f;   /* Unterstrich für besseren Abschluss */
 }
 
-header ul {
-    list-style: none;
+header h1 {
+    color: white;                       /* Weiße Schriftfarbe */
+    margin: 0;                          /* Entferne zusätzlichen Abstand */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Textschatten */
+    font-size: 36px;                    /* Schriftgröße anpassen */
+}
+
+nav ul {
+    list-style: none;                   /* Listenpunkte entfernen */
     padding: 0;
-    margin: 0;                  /* Entferne zusätzlichen Außenabstand */
+    margin: 20px 0 0;                   /* Abstand nach oben */
 }
 
-header li {
-    display: inline;
+nav li {
+    display: inline;                    /* Navigationselemente nebeneinander */
     margin: 0 15px;
 }
 
-header a {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
+nav a {
+    color: white;                       /* Linkfarbe */
+    text-decoration: none;              /* Unterstrich entfernen */
+    font-weight: bold;                  /* Fette Schrift */
+    padding: 10px 15px;                 /* Abstand für bessere Klickfläche */
+    border-radius: 5px;                 /* Abgerundete Ecken */
+    background-color: #3f3f3f;          /* Hintergrundfarbe der Links */
+    transition: background-color 0.3s;  /* Sanfter Hover-Effekt */
+}
+
+nav a:hover {
+    background-color: black;            /* Hintergrundfarbe beim Hover */
 }
 
 /* Abschnitt-Styling */
@@ -93,7 +106,7 @@ section h2 {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;    /* Weißer Hintergrund für Kontrast */
+    background-color: black;    /* Weißer Hintergrund für Kontrast */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;               /* Dunkle Textfarbe für Lesbarkeit */
