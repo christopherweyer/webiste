@@ -101,7 +101,39 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/*like button*/
+
+#like-dislike-container {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#like-btn {
+    background-color: #4CAF50;  /* Grün für Like */
+    color: white;
+}
+
+#dislike-btn {
+    background-color: #f44336;  /* Rot für Dislike */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
 /* Spezifische Styles für die Kontaktseite */
+
 #kontakt {
     max-width: 600px;
     margin: 20px auto;
