@@ -4,7 +4,7 @@ body {
     background-position: center;    /* Bild zentrieren */
     background-repeat: no-repeat;   /* Verhindert, dass das Bild wiederholt wird */
     background-attachment: fixed;   /* Hintergrund bleibt beim Scrollen fixiert */
-    color: white;                   /* Textfarbe anpassen, damit er lesbar bleibt */
+    color: rgb(0, 0, 0);                   /* Textfarbe anpassen, damit er lesbar bleibt */
 }
 
 
@@ -35,7 +35,7 @@ section {
 }
 
 section h2 {
-    color: #3f3f3f;
+    color: #000000;
 }
 
 section ul {
@@ -57,5 +57,5 @@ section a {
 }
 
 section a:hover {
-    background-color: #3f3f3f;
+    background-color: #000000;
 }
