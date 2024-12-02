@@ -26,7 +26,7 @@ header li {
 }
 
 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ section a {
     display: inline-block;
     padding: 10px 15px;
     background-color: #3f3f3f;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
 }
