@@ -160,11 +160,11 @@ button:hover {
 
 #kontakt input,
 #kontakt textarea {
-    width: 100%;
+    width: 70%;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
 }
@@ -185,7 +185,7 @@ button:hover {
 
 /* Content Box */
 #content-box {
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
