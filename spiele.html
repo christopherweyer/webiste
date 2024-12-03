@@ -9,6 +9,7 @@
     <!-- Füge hier die CSS-Dateien für jedes Spiel ein -->
     <link rel="stylesheet" href="tetris.css"> <!-- Tetris CSS -->
     <link rel="stylesheet" href="snake.css">  <!-- Snake CSS -->
+    <link rel="stylesheet" href="schach.css"> 
 
     <style>
         body {
@@ -63,7 +64,7 @@
 
     <!-- Tetris Tab -->
     <div id="tetris-container">
-        <h1>Tetris</h1>
+        <h2>Tetris</h2>
         <div id="game-board"></div>
         <div id="score">
             <span>Score: <span id="scoreValue">0</span></span>
@@ -73,7 +74,7 @@
 
     <!-- Snake Tab -->
     <div id="snake-container">
-        <h1>Snake</h1>
+        <h2>Snake</h2>
         <div id="game-board"></div>
         <div id="score">
             <span>Score: <span id="scoreValue">0</span></span>
@@ -82,7 +83,7 @@
     <script src="snake.js"></script>
 
     <!-- Schach Tab -->
-     <h1>Schach (gegen KI)</h1>
+     <h2>Schach (gegen KI)</h2>
     <div id="chessboard" style="width: 400px; margin: 0 auto;"></div> <!-- Schachbrett -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/nmrugg/stockfish.js/stockfish.js"></script>
