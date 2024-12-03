@@ -69,13 +69,28 @@ Vielen Dank und alles Gute!
 <script src="script.js"></script>
 </main>
 
-<div id="cookie-placeholder"></div>
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 10px; text-align: center; z-index: 1000;">
+    <p>Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. <a href="#datenschutz" style="color: #00f;">Mehr erfahren</a></p>
+    <button onclick="acceptCookies()" style="background-color: #00a; color: white; padding: 10px; border: none; cursor: pointer;">Cookies akzeptieren</button>
+    <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
+</div>
+
 <script>
-    fetch('/cookie-banner.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('cookie-placeholder').innerHTML = data;
-        });
+    function acceptCookies() {
+        document.cookie = "cookies-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    function rejectCookies() {
+        document.cookie = "cookies-accepted=false; path=/; max-age=" + 60 * 60 * 24 * 365;
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    window.onload = function () {
+        if (!document.cookie.split('; ').find(row => row.startsWith('cookies-accepted='))) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    };
 </script>
 
 </body>
