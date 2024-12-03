@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spiele-Sammlung</title>
+    <title>Games</title>
     <link rel="stylesheet" href="style.css">
     
     <!-- Füge hier die CSS-Dateien für jedes Spiel ein -->
-    <link rel="stylesheet" href="tetris.css"> <!-- Tetris CSS -->
-    <link rel="stylesheet" href="snake.css">  <!-- Snake CSS -->
     <link rel="stylesheet" href="schach.css"> 
 
     <style>
@@ -53,37 +51,10 @@
         </nav>
     </header>
 
-    <h1>Spiele-Sammlung</h1>
+    <h1>Schach gegen KI</h1>
     
-    <!-- Tab-Buttons -->
-    <div class="tab-buttons">
-        <button onclick="openTab('tetris')" class="active">Tetris</button>
-        <button onclick="openTab('snake')">Snake</button>
-        <button onclick="openTab('chess')">Schach</button>
-    </div>
-
-    <!-- Tetris Tab -->
-    <div id="tetris-container">
-        <h2>Tetris</h2>
-        <div id="game-board"></div>
-        <div id="score">
-            <span>Score: <span id="scoreValue">0</span></span>
-        </div>
-    </div>
-    <script src="tetris.js"></script>
-
-    <!-- Snake Tab -->
-    <div id="snake-container">
-        <h2>Snake</h2>
-        <div id="game-board"></div>
-        <div id="score">
-            <span>Score: <span id="scoreValue">0</span></span>
-        </div>
-    </div>
-    <script src="snake.js"></script>
 
     <!-- Schach Tab -->
-     <h2>Schach (gegen KI)</h2>
     <div id="chessboard" style="width: 400px; margin: 0 auto;"></div> <!-- Schachbrett -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/nmrugg/stockfish.js/stockfish.js"></script>
@@ -142,20 +113,6 @@
         }
     </script>
 
-    <script>
-        function openTab(tabName) {
-            // Alle Tabs verstecken
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.style.display = 'none');
-            
-            // Alle Buttons deaktivieren
-            const buttons = document.querySelectorAll('.tab-buttons button');
-            buttons.forEach(button => button.classList.remove('active'));
 
-            // Den ausgewählten Tab anzeigen und Button aktivieren
-            document.getElementById(tabName).style.display = 'block';
-            document.querySelector(`button[onclick="openTab('${tabName}')"]`).classList.add('active');
-        }
-    </script>
 </body>
 </html>
