@@ -77,32 +77,39 @@ section h2 {
     display: flex;
     flex-wrap: wrap; /* Elemente umbrechen, wenn der Platz nicht ausreicht */
     justify-content: center; /* Zentrierte Ausrichtung */
-    gap: 15px; /* Abstand zwischen den Elementen */
+    gap: 20px; /* Abstand zwischen den Feldern */
 }
 
 .dokument-item {
-    flex: 1 1 calc(25% - 30px); /* Anpassbare Breite der Felder */
-    max-width: 200px; /* Maximale Breite */
+    flex: 1 1 200px; /* Flexibler Platzverbrauch mit fester Breite von 200px */
+    max-width: 200px; /* Maximale Breite der Felder */
     min-width: 150px; /* Minimale Breite für kleinere Bildschirme */
-    margin: 10px;
     text-align: center;
 }
 
 .dokument-item a {
-    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
-    padding: 10px 15px; /* Innenabstand für bessere Lesbarkeit */
+    background-color: rgba(0, 0, 0, 0.8); /* Hintergrundfarbe */
+    padding: 12px 15px; /* Abstand innen */
     border-radius: 8px; /* Abgerundete Ecken */
-    color: white;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
+    color: white; /* Textfarbe */
+    text-decoration: none; /* Kein Unterstrich */
+    display: block; /* Blockelement */
+    text-align: center; /* Zentrierter Text */
+    transition: background-color 0.3s ease; /* Weicher Hover-Effekt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
 }
 
 .dokument-item a:hover {
-    background-color: #555; /* Hover-Effekt */
+    background-color: #444; /* Hintergrundfarbe beim Hover */
 }
+
+/* Responsives Layout für kleinere Bildschirme */
+@media (max-width: 600px) {
+    .dokument-item {
+        flex: 1 1 100%; /* Vollbreite bei kleinen Bildschirmen */
+    }
+}
+
 
 /* Like/Dislike Buttons */
 #like-dislike-container {
