@@ -160,7 +160,7 @@ button:hover {
 
 #kontakt input,
 #kontakt textarea {
-    width: 70%;
+    width: 100%;
     padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
