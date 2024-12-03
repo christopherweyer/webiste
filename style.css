@@ -161,8 +161,8 @@ button:hover {
 #kontakt input,
 #kontakt textarea {
     width: 100%;
-    padding: 10px;
-    margin: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.9);
