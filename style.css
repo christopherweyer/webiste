@@ -169,11 +169,15 @@ button:hover {
     background-color: #0056b3;
 }
 
+    
+
 .dokumente-container {
-    display: flex;
-    flex-wrap: wrap;              /* Elemente umbrechen lassen */
-    justify-content: center;      /* Zentrierte Anordnung */
-    gap: 15px;                    /* Abstand zwischen Elementen */
+    display: block;              /* Block-Layout für vertikale Anordnung */
+    margin: 20px 0;              /* Abstand oben und unten */
+}
+
+.dokument-item {
+    margin-bottom: 15px;         /* Abstand zwischen den Elementen */
 }
 
 .dokument-item a {
