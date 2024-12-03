@@ -58,6 +58,8 @@ section {
 section h2 {
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;         /* Überschrift zentrieren */
+    margin-bottom: 15px;
 }
 
 section ul {
@@ -84,7 +86,7 @@ section a:hover {
     background-color: black;   /* Hintergrundfarbe beim Überfahren */
 }
 
-/*index style */
+/* Index Style */
 #content-box {
     max-width: 800px;                    /* Begrenzte Breite für besseren Fokus */
     margin: 20px auto;                   /* Zentrierung des Inhalts */
@@ -96,13 +98,7 @@ section a:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten */
 }
 
-section h2 {
-    text-align: center;                 /* Überschrift zentrieren */
-    margin-bottom: 15px;
-}
-
-/*like button*/
-
+/* Like Button */
 #like-dislike-container {
     text-align: center;
     margin: 20px;
@@ -131,9 +127,7 @@ button:hover {
     opacity: 0.8;
 }
 
-
 /* Spezifische Styles für die Kontaktseite */
-
 #kontakt {
     max-width: 600px;
     margin: 20px;
