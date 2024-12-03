@@ -1,0 +1,33 @@
+/* Grundlegendes Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#snake-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#game-board {
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid white;
+}
+
+#score {
+    font-size: 1.5em;
+    color: #fff;
+}
