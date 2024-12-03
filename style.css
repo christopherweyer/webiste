@@ -7,101 +7,107 @@ body {
     background-attachment: fixed;            /* Hintergrund bleibt beim Scrollen fixiert */
     color: white;                            /* Standardtextfarbe */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten für Lesbarkeit */
+    font-family: Arial, sans-serif;          /* Einheitliche Schriftart */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Einheitlicher Header-Stil */
+/* Header-Stil */
 header {
-    background-color: #7e7e7e;          /* Hintergrundfarbe */
-    padding: 20px 0;                    /* Vertikaler Abstand */
-    text-align: center;                 /* Text zentrieren */
-    border-bottom: 3px solid #3f3f3f;   /* Unterstrich für besseren Abschluss */
+    background-color: rgba(126, 126, 126, 0.9); /* Transparenteres Grau für einen modernen Look */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #3f3f3f;
 }
 
 header h1 {
-    color: white;                       /* Weiße Schriftfarbe */
-    margin: 0;                          /* Entferne zusätzlichen Abstand */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Textschatten */
-    font-size: 36px;                    /* Schriftgröße anpassen */
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
 }
 
+/* Navigation */
 nav ul {
-    list-style: none;                   /* Listenpunkte entfernen */
+    list-style: none;
     padding: 0;
-    margin: 20px 0 0;                   /* Abstand nach oben */
+    margin: 20px 0 0;
+    text-align: center;
 }
 
 nav li {
-    display: inline;                    /* Navigationselemente nebeneinander */
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav a {
-    color: white;                       /* Linkfarbe */
-    text-decoration: none;              /* Unterstrich entfernen */
-    font-weight: bold;                  /* Fette Schrift */
-    padding: 10px 15px;                 /* Abstand für bessere Klickfläche */
-    border-radius: 5px;                 /* Abgerundete Ecken */
-    background-color: #3f3f3f;          /* Hintergrundfarbe der Links */
-    transition: background-color 0.3s;  /* Sanfter Hover-Effekt */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: black;            /* Hintergrundfarbe beim Hover */
+    background-color: black;
 }
 
 /* Abschnitt-Styling */
 section {
-    margin: 20px;
-    padding: 20px;              /* Mehr Innenabstand für Konsistenz */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 section h2 {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    text-align: center;         /* Überschrift zentrieren */
+    text-align: center;
     margin-bottom: 15px;
+    font-size: 28px;
 }
 
-section ul {
-    list-style-type: none;
-    padding: 0;
+/* Dokumentenliste */
+.dokumente-container {
+    display: flex;
+    flex-wrap: wrap; /* Elemente umbrechen, wenn der Platz nicht ausreicht */
+    justify-content: center; /* Zentrierte Ausrichtung */
+    gap: 15px; /* Abstand zwischen den Elementen */
 }
 
-section li {
-    margin: 10px 0;
+.dokument-item {
+    flex: 1 1 calc(25% - 30px); /* Anpassbare Breite der Felder */
+    max-width: 200px; /* Maximale Breite */
+    min-width: 150px; /* Minimale Breite für kleinere Bildschirme */
+    margin: 10px;
+    text-align: center;
 }
 
-section a {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #3f3f3f;
+.dokument-item a {
+    background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe */
+    padding: 10px 15px; /* Innenabstand für bessere Lesbarkeit */
+    border-radius: 8px; /* Abgerundete Ecken */
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;  /* Sanfter Übergang für Hover */
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Leichter Schatten */
 }
 
-section a:hover {
-    background-color: black;   /* Hintergrundfarbe beim Überfahren */
+.dokument-item a:hover {
+    background-color: #555; /* Hover-Effekt */
 }
 
-/* Index Style */
-#content-box {
-    max-width: 800px;                    /* Begrenzte Breite für besseren Fokus */
-    margin: 20px auto;                   /* Zentrierung des Inhalts */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund mit Transparenz */
-    border-radius: 10px;                 /* Abgerundete Ecken */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Leichter Schatten für Tiefe */
-    color: white;                        /* Textfarbe */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Textschatten */
-}
-
-/* Like Button */
+/* Like/Dislike Buttons */
 #like-dislike-container {
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 button {
@@ -111,48 +117,48 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
+    color: white;
 }
 
 #like-btn {
-    background-color: #7e7e7e;  /* Grün für Like */
-    color: white;
+    background-color: #4CAF50;
 }
 
 #dislike-btn {
-    background-color: #7e7e7e;  /* Rot für Dislike */
-    color: white;
+    background-color: #f44336;
 }
 
 button:hover {
     opacity: 0.8;
 }
 
-/* Spezifische Styles für die Kontaktseite */
+/* Kontaktformular */
 #kontakt {
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: black;    /* Weißer Hintergrund für Kontrast */
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333;               /* Dunkle Textfarbe für Lesbarkeit */
-    text-shadow: none;         /* Kein Textschatten für Formular-Inhalt */
+    color: white;
 }
 
 #kontakt label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #333;               /* Textfarbe für die Formular-Beschriftungen */
 }
 
 #kontakt input,
 #kontakt textarea {
-    width: 100%;               /* Volle Breite */
+    width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 
 #kontakt button {
@@ -162,35 +168,20 @@ button:hover {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 #kontakt button:hover {
     background-color: #0056b3;
 }
 
-    
-
-.dokumente-container {
-    display: block;              /* Block-Layout für vertikale Anordnung */
-    margin: 20px 0;              /* Abstand oben und unten */
-}
-
-.dokument-item {
-    margin-bottom: 15px;         /* Abstand zwischen den Elementen */
-}
-
-.dokument-item a {
-    background-color: rgba(0, 0, 0, 0.7);   /* Hintergrundfarbe */
-    padding: 12px 20px;
-    border-radius: 8px;
+/* Content Box */
+#content-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: white;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    transition: background-color 0.3s;
-}
-
-.dokument-item a:hover {
-    background-color: #555;      /* Hover-Effekt */
 }
