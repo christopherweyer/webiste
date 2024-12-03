@@ -143,7 +143,7 @@ button:hover {
 
 /* Kontaktformular */
 #kontakt {
-    max-width: 600px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.9);
@@ -162,7 +162,7 @@ button:hover {
 #kontakt textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.9);
