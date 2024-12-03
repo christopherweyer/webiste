@@ -176,8 +176,25 @@ button:hover {
 }
 
 .dokumente-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatische Spalten */
-    gap: 20px;  /* Abstand */
+    display: flex;
+    flex-wrap: wrap;           /* Elemente umbrechen lassen */
+    justify-content: center;   /* Zentriert ausrichten */
+    gap: 20px;                 /* Abstand zwischen den Buttons */
+}
+
+.dokument-item {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-align: center;
+    transition: background-color 0.3s;
+}
+
+.dokument-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.dokument-item:hover {
+    background-color: #555;   /* Button-Hover-Effekt */
 }
