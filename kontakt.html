@@ -60,9 +60,18 @@
 
 <h3>Ihre Rechte auf Auskunft, Berichtigung, Löschung und Widerspruch</h3>
 <p>Sie haben das Recht, jederzeit Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten zu erhalten. Ebenso haben Sie das Recht auf Berichtigung, Sperrung oder, abgesehen von der vorgeschriebenen Datenspeicherung zur Geschäftsabwicklung, Löschung Ihrer personenbezogenen Daten.</p>
-<p>Bitte wenden Sie sich dazu an die im Impressum angegebene Adresse.</p>
+<p>Bitte nutzen Sie hierfür das Kontaktformular.</p>
     
     </main>
 
+    <div id="cookie-placeholder"></div>
+    <script>
+        fetch('/cookie-banner.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('cookie-placeholder').innerHTML = data;
+            });
+    </script>
+    
 </body>
 </html>
