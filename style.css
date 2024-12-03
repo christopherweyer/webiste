@@ -118,12 +118,12 @@ button {
 }
 
 #like-btn {
-    background-color: #4CAF50;  /* Grün für Like */
+    background-color: #7e7e7e;  /* Grün für Like */
     color: white;
 }
 
 #dislike-btn {
-    background-color: #f44336;  /* Rot für Dislike */
+    background-color: #7e7e7e;  /* Rot für Dislike */
     color: white;
 }
 
@@ -173,4 +173,11 @@ button:hover {
 
 #kontakt button:hover {
     background-color: #0056b3;
+}
+
+.dokumente-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatische Spalten */
+    gap: 20px;  /* Abstand */
+    text-align: center;
 }
