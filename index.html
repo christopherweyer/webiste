@@ -93,5 +93,26 @@
     }
 </script>
 
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
+
+<script>
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAfi2Pta5-mMi5xT6-NX1zM5GqG7zvJ3yE",
+  authDomain: "webseite-72b69.firebaseapp.com",
+  projectId: "webseite-72b69",
+  storageBucket: "webseite-72b69.firebasestorage.app",
+  messagingSenderId: "474038510019",
+  appId: "1:474038510019:web:7b87d1bbec87893ff59d76",
+  measurementId: "G-49CQGYE2F6"
+};
+
+  // Firebase initialisieren
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
 </body>
 </html>
