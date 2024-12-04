@@ -5,74 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christopher Weyer</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <header>
-        <h1>Willkommen auf meiner Webseite!</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Über mich</a></li>
-                <li><a href="Zertifikate.html">Lebenslauf & Zertifikate</a></li>
-                <li><a href="kontakt.html">Kontakt & Datenschutzerklärung</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Willkommen auf meiner Webseite!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Über mich</a></li>
+            <li><a href="Zertifikate.html">Lebenslauf & Zertifikate</a></li>
+            <li><a href="kontakt.html">Kontakt & Datenschutzerklärung</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main id="content-box">
+<main id="content-box">
     <section id="about">
         <h2>Über mich</h2>
-        
-        <br>
-        <br>
-        
-<p>Hallo und herzlich willkommen!</p>
-<br>
-<p>Mein Name ist Christopher Weyer, geboren am 01. Februar 1995 in der charmanten Stadt Aschaffenburg. Derzeit stecke ich mitten in einer spannenden Umschulung zum Fachinformatiker für Anwendungsentwicklung – und genau zu Übungszwecken ist diese Webseite entstanden. Ich hoffe, sie gefällt Ihnen! 😊</p>
+        <p>Hallo und herzlich willkommen!</p>
 
-<p>Mein Weg begann 2011 mit dem Abschluss der Schönberg-Mittelschule, den ich mit einem qualifizierenden Mittelschulabschluss erfolgreich meisterte. Direkt im Anschluss startete ich eine Ausbildung zum Kaufmann im Einzelhandel. Leider musste ich diese aufgrund eines Arbeitsunfalls vorzeitig beenden – eine Herausforderung, die mich jedoch nicht aufgehalten hat.
-</p>
+        <p>Mein Name ist Christopher Weyer, geboren am 01. Februar 1995 in Aschaffenburg. Derzeit stecke ich mitten in einer spannenden Umschulung zum Fachinformatiker für Anwendungsentwicklung – und genau zu Übungszwecken ist diese Webseite entstanden.</p>
 
-<p>Stattdessen führte mich mein Weg in das Wach- und Sicherheitsgewerbe. Hier konnte ich meine Vielseitigkeit in verschiedenen Bereichen unter Beweis stellen:
-<br>
-<br>
-Objektschutz<br>
-Doorman<br>
-Personenschutz<br>
-Veranstaltungsschutz<br>
-und als Kaufhausdetektiv<br>
-<br>
-<p>Jede dieser Aufgaben hat mir nicht nur wertvolle Erfahrungen, sondern auch ein hohes Maß an Verantwortungsbewusstsein und Menschenkenntnis vermittelt.
-</p>
+        <p>Mein Weg begann 2011 mit dem Abschluss der Schönberg-Mittelschule. Direkt im Anschluss startete ich eine Ausbildung zum Kaufmann im Einzelhandel. Leider musste ich diese aufgrund eines Arbeitsunfalls vorzeitig beenden.</p>
 
-<p>Doch irgendwann wurde es Zeit, meinem Herzen zu folgen: Die IT-Welt hat mich schon immer fasziniert. Deshalb habe ich mich entschlossen, mein Hobby zum Beruf zu machen und eine Umschulung zum Fachinformatiker für Anwendungsentwicklung zu beginnen. Diese Reise wird im Juli 2026 mit meinem Abschluss enden – und bis dahin lerne ich jeden Tag etwas Neues dazu!
-</p>
+        <p>Danach führte mich mein Weg in das Wach- und Sicherheitsgewerbe, wo ich Erfahrungen im Objektschutz, Personenschutz und Veranstaltungsschutz sammelte.</p>
 
-<p>Ich möchte mich herzlich bei Ihnen bedanken, dass Sie sich die Zeit genommen haben, meine Website zu besuchen und einen Einblick in meinen Weg zu gewinnen. Wenn Ihnen meine Arbeit gefällt, würde ich mich sehr über Ihr Feedback freuen – sei es ein Daumen nach oben oder eine kurze Nachricht.
-</p>
+        <p>Heute widme ich mich meiner Leidenschaft für die IT und befinde mich in einer Umschulung zum Fachinformatiker für Anwendungsentwicklung, die ich 2026 abschließen werde.</p>
 
-<p>
-<br>
-Vielen Dank und alles Gute!
-</p>
-
+        <p>Ich danke Ihnen für Ihren Besuch und freue mich über Ihr Feedback!</p>
     </section>
 
     <!-- Like- und Dislike-Buttons -->
-<div id="like-dislike-container">
-    <button id="like-btn">👍<span id="like-count">0</span></button>
-    <button id="dislike-btn">👎<span id="dislike-count">0</span></button>
-</div>
-
-<script src="script.js"></script>
+    <section id="like-dislike">
+        <h3>Gefällt Ihnen meine Webseite?</h3>
+        <div id="like-dislike-container">
+            <button id="like-btn" onclick="handleLike()">👍 <span id="like-count">0</span></button>
+            <button id="dislike-btn" onclick="handleDislike()">👎 <span id="dislike-count">0</span></button>
+        </div>
+    </section>
 </main>
 
+<!-- Cookie-Banner -->
 <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 10px; text-align: center; z-index: 1000;">
     <p>Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. <a href="#datenschutz" style="color: #00f;">Mehr erfahren</a></p>
     <button onclick="acceptCookies()" style="background-color: #00a; color: white; padding: 10px; border: none; cursor: pointer;">Cookies akzeptieren</button>
     <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
 </div>
+
+<!-- Footer -->
+<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+    <p>&copy; 2024 Christopher Weyer. Alle Rechte vorbehalten.</p>
+    <p><a href="#" style="color: #ffffff;">Zurück nach oben ↑</a></p>
+</footer>
+
+<!-- JavaScript für Likes und Cookies -->
+<script src="script.js"></script>
 
 <script>
     function acceptCookies() {
@@ -90,16 +77,21 @@ Vielen Dank und alles Gute!
             document.getElementById('cookie-banner').style.display = 'block';
         }
     };
+
+    function handleLike() {
+        const likeCountElement = document.getElementById('like-count');
+        let likeCount = parseInt(likeCountElement.innerText);
+        likeCount++;
+        likeCountElement.innerText = likeCount;
+    }
+
+    function handleDislike() {
+        const dislikeCountElement = document.getElementById('dislike-count');
+        let dislikeCount = parseInt(dislikeCountElement.innerText);
+        dislikeCount++;
+        dislikeCountElement.innerText = dislikeCount;
+    }
 </script>
-
-<footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
-    <div>
-        <p>&copy; 2024 Christopher Weyer. Alle Rechte vorbehalten.</p>
-
-    <p style="margin-top: 10px;">
-        <a href="#" style="color: #ffffff;">Zurück nach oben ↑</a>
-    </p>
-</footer>
 
 </body>
 </html>

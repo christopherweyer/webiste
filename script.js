@@ -1,43 +1,49 @@
-// scripts.js
-let likeCount = localStorage.getItem('likeCount') || 0;
-let dislikeCount = localStorage.getItem('dislikeCount') || 0;
+// Laden der aktuellen Like- und Dislike-Zahlen aus dem LocalStorage
+let likeCount = parseInt(localStorage.getItem('likeCount')) || 0;
+let dislikeCount = parseInt(localStorage.getItem('dislikeCount')) || 0;
 
 document.getElementById('like-count').innerText = likeCount;
 document.getElementById('dislike-count').innerText = dislikeCount;
 
+// Event-Listener für den Like-Button
 document.getElementById('like-btn').addEventListener('click', function() {
-    if (localStorage.getItem('liked') === 'true') {
-        alert("Du hast schon gevotet!");
+    if (localStorage.getItem('voted') === 'true') {
+        alert("Du hast bereits abgestimmt!");
         return;
     }
 
     likeCount++;
     localStorage.setItem('likeCount', likeCount);
-    localStorage.setItem('liked', 'true');
+    localStorage.setItem('voted', 'true');
     document.getElementById('like-count').innerText = likeCount;
+
+    alert("Danke für dein Like! 😊");
 });
 
+// Event-Listener für den Dislike-Button
 document.getElementById('dislike-btn').addEventListener('click', function() {
-    if (localStorage.getItem('disliked') === 'true') {
-        alert("Du hast schon gevotet!");
+    if (localStorage.getItem('voted') === 'true') {
+        alert("Du hast bereits abgestimmt!");
         return;
     }
 
-    let sicher = confirm("Sicher, oder verklickt? :-)");
+    let sicher = confirm("Bist du sicher, dass du disliken möchtest?");
 
     if (!sicher) return;
 
-    let freundFrage = confirm("Bist du ein guter (ehrenloser) Freund des Webseiten-Erstellers?");
+    let freundFrage = confirm("Bist du ein Freund des Webseiten-Erstellers?");
 
     if (freundFrage) {
-        let name = prompt("Wie heißt du denn, lieber Freund? :-)");
+        let name = prompt("Traust Du Dich auch, mir Deinen Namen zu verraten, lieber Freund?");
         if (name) {
-            alert("F*** Dich, " + name + "! :-)");
+            alert(`Anzeige ist raus, ${name}! 😈`);
         }
     } else {
         dislikeCount++;
         localStorage.setItem('dislikeCount', dislikeCount);
-        localStorage.setItem('disliked', 'true');
+        localStorage.setItem('voted', 'true');
         document.getElementById('dislike-count').innerText = dislikeCount;
+
+        alert("Schade, dass dir die Seite nicht gefällt! 😢");
     }
 });
