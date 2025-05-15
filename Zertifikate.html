@@ -24,7 +24,7 @@
 
         <section class="dokumente-container">
             <div class="dokument-item">
-                <a href="Zertifikate/Lebenslauf_Christopher_Weyer.pdf" download target="_blank">Passwortgeschützten Lebenslauf öffnen</a>
+                <a href="Zertifikate/Lebenslauf_Christopher_Weyer.pdf" download>Passwortgeschützten Lebenslauf öffnen</a>
             </div>
         </section>
         
@@ -82,23 +82,7 @@
             <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
         </div>
         
-        <script>
-            function acceptCookies() {
-                document.cookie = "cookies-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
-                document.getElementById('cookie-banner').style.display = 'none';
-            }
-        
-            function rejectCookies() {
-                document.cookie = "cookies-accepted=false; path=/; max-age=" + 60 * 60 * 24 * 365;
-                document.getElementById('cookie-banner').style.display = 'none';
-            }
-        
-            window.onload = function () {
-                if (!document.cookie.split('; ').find(row => row.startsWith('cookies-accepted='))) {
-                    document.getElementById('cookie-banner').style.display = 'block';
-                }
-            };
-        </script>
+
 
 <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
     <div>
