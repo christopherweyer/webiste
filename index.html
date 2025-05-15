@@ -21,8 +21,12 @@
 
 <main id="content-box">
     <section id="about">
+
         <h2>Über mich</h2>
+
         <p>Hallo und herzlich willkommen!</p>
+
+        <br><br>
 
         <p>Mein Name ist Christopher Weyer, geboren am 01. Februar 1995 in Aschaffenburg. Derzeit stecke ich mitten in einer spannenden Umschulung zum Fachinformatiker für Anwendungsentwicklung – und genau zu Übungszwecken ist diese Webseite entstanden.</p>
 
@@ -32,22 +36,22 @@
 
         <p>Heute widme ich mich meiner Leidenschaft für die IT und befinde mich in einer Umschulung zum Fachinformatiker für Anwendungsentwicklung, die ich 2026 abschließen werde.</p>
 
+        <p>Erste Erfahrungen habe ich:</p>
+        
+        <p>-im Arbeiten in virtuellen Maschinen (Oracle, Hyper-V), darunter auch in Linux-Umgebungen, wie Kali und Parrot OS.</p>
+
+        <p>-im Umgang mit HTML, CSS, JavaScript, Java, und C (Grundkenntnisse).</p>
+
+        <p>-im coding mit Github, Visual Studio und IntelliJ.</p>
+
+        <br><br><br>
+        
         <p>Ich danke Ihnen für Ihren Besuch und freue mich über Ihr Feedback!</p>
+
     </section>
 
-    <!-- Like- und Dislike-Buttons entfernt -->
-    <section id="like-dislike">
-        <h3>Gefällt Ihnen meine Webseite?</h3>
-        <p>Danke für Ihr Feedback!</p>
-    </section>
+
 </main>
-
-<!-- Cookie-Banner -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 10px; text-align: center; z-index: 1000;">
-    <p>Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. <a href="#datenschutz" style="color: #00f;">Mehr erfahren</a></p>
-    <button onclick="acceptCookies()" style="background-color: #00a; color: white; padding: 10px; border: none; cursor: pointer;">Cookies akzeptieren</button>
-    <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
-</div>
 
 <!-- Footer -->
 <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
@@ -55,24 +59,6 @@
     <p><a href="#" style="color: #ffffff;">Zurück nach oben ↑</a></p>
 </footer>
 
-<!-- JavaScript für Cookies -->
-<script>
-    function acceptCookies() {
-        document.cookie = "cookies-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    function rejectCookies() {
-        document.cookie = "cookies-accepted=false; path=/; max-age=" + 60 * 60 * 24 * 365;
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    window.onload = function () {
-        if (!document.cookie.split('; ').find(row => row.startsWith('cookies-accepted='))) {
-            document.getElementById('cookie-banner').style.display = 'block';
-        }
-    };
-</script>
 
 </body>
 </html>
