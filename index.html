@@ -1,123 +1,78 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Christopher Weyer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Christopher Weyer</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-  <h1>Willkommen auf meiner Webseite!</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Über mich</a></li>
-      <li><a href="Zertifikate.html">Lebenslauf & Zertifikate</a></li>
-      <li><a href="kontakt.html">Kontakt & Datenschutzerklärung</a></li>
-    </ul>
-  </nav>
+    <h1>Willkommen auf meiner Webseite!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Über mich</a></li>
+            <li><a href="Zertifikate.html">Lebenslauf & Zertifikate</a></li>
+            <li><a href="kontakt.html">Kontakt & Datenschutzerklärung</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main id="content-box">
-  <section id="about">
-    <h2>Über mich</h2>
-    <p>Hallo und herzlich willkommen!</p>
-    <p>Mein Name ist Christopher Weyer, geboren am 01. Februar 1995 in Aschaffenburg. Derzeit stecke ich mitten in einer spannenden Umschulung zum Fachinformatiker für Anwendungsentwicklung – und genau zu Übungszwecken ist diese Webseite entstanden.</p>
-    <p>Mein Weg begann 2011 mit dem Abschluss der Schönberg-Mittelschule. Direkt im Anschluss startete ich eine Ausbildung zum Kaufmann im Einzelhandel. Leider musste ich diese aufgrund eines Arbeitsunfalls vorzeitig beenden.</p>
-    <p>Danach führte mich mein Weg in das Wach- und Sicherheitsgewerbe, wo ich Erfahrungen im Objektschutz, Personenschutz und Veranstaltungsschutz sammelte.</p>
-    <p>Heute widme ich mich meiner Leidenschaft für die IT und befinde mich in einer Umschulung zum Fachinformatiker für Anwendungsentwicklung, die ich 2026 abschließen werde.</p>
-    <p>Ich danke Ihnen für Ihren Besuch und freue mich über Ihr Feedback!</p>
-  </section>
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Hallo und herzlich willkommen!</p>
 
-  <!-- Like- und Dislike-Buttons -->
-  <section id="like-dislike">
-    <h3>Gefällt Ihnen meine Webseite?</h3>
-    <div id="like-dislike-container">
-      <button id="like-btn" onclick="handleLike()">👍 <span id="like-count">0</span></button>
-      <button id="dislike-btn" onclick="handleDislike()">👎 <span id="dislike-count">0</span></button>
-    </div>
-  </section>
+        <p>Mein Name ist Christopher Weyer, geboren am 01. Februar 1995 in Aschaffenburg. Derzeit stecke ich mitten in einer spannenden Umschulung zum Fachinformatiker für Anwendungsentwicklung – und genau zu Übungszwecken ist diese Webseite entstanden.</p>
+
+        <p>Mein Weg begann 2011 mit dem Abschluss der Schönberg-Mittelschule. Direkt im Anschluss startete ich eine Ausbildung zum Kaufmann im Einzelhandel. Leider musste ich diese aufgrund eines Arbeitsunfalls vorzeitig beenden.</p>
+
+        <p>Danach führte mich mein Weg in das Wach- und Sicherheitsgewerbe, wo ich Erfahrungen im Objektschutz, Personenschutz und Veranstaltungsschutz sammelte.</p>
+
+        <p>Heute widme ich mich meiner Leidenschaft für die IT und befinde mich in einer Umschulung zum Fachinformatiker für Anwendungsentwicklung, die ich 2026 abschließen werde.</p>
+
+        <p>Ich danke Ihnen für Ihren Besuch und freue mich über Ihr Feedback!</p>
+    </section>
+
+    <!-- Like- und Dislike-Buttons entfernt -->
+    <section id="like-dislike">
+        <h3>Gefällt Ihnen meine Webseite?</h3>
+        <p>Danke für Ihr Feedback!</p>
+    </section>
 </main>
 
 <!-- Cookie-Banner -->
 <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.9); color: white; padding: 10px; text-align: center; z-index: 1000;">
-  <p>Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. <a href="#datenschutz" style="color: #00f;">Mehr erfahren</a></p>
-  <button onclick="acceptCookies()" style="background-color: #00a; color: white; padding: 10px; border: none; cursor: pointer;">Cookies akzeptieren</button>
-  <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
+    <p>Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. <a href="#datenschutz" style="color: #00f;">Mehr erfahren</a></p>
+    <button onclick="acceptCookies()" style="background-color: #00a; color: white; padding: 10px; border: none; cursor: pointer;">Cookies akzeptieren</button>
+    <button onclick="rejectCookies()" style="background-color: #a00; color: white; padding: 10px; border: none; cursor: pointer;">Nur notwendige Cookies</button>
 </div>
 
 <!-- Footer -->
 <footer style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
-  <p>&copy; 2024 Christopher Weyer. Alle Rechte vorbehalten.</p>
-  <p><a href="#" style="color: #ffffff;">Zurück nach oben ↑</a></p>
+    <p>&copy; 2024 Christopher Weyer. Alle Rechte vorbehalten.</p>
+    <p><a href="#" style="color: #ffffff;">Zurück nach oben ↑</a></p>
 </footer>
 
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
-
+<!-- JavaScript für Cookies -->
 <script>
-  // Firebase-Konfiguration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAfi2Pta5-mMi5xT6-NX1zM5GqG7zvJ3yE",
-    authDomain: "webseite-72b69.firebaseapp.com",
-    projectId: "webseite-72b69",
-    storageBucket: "webseite-72b69.appspot.com",
-    messagingSenderId: "474038510019",
-    appId: "1:474038510019:web:7b87d1bbec87893ff59d76",
-    measurementId: "G-49CQGYE2F6"
-  };
-
-  // Firebase initialisieren
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-
-  // Daten beim Laden anzeigen
-  async function loadVotes() {
-    const doc = await db.collection("votes").doc("gesamt").get();
-    if (doc.exists) {
-      const data = doc.data();
-      document.getElementById("like-count").innerText = data.likes || 0;
-      document.getElementById("dislike-count").innerText = data.dislikes || 0;
-    }
-  }
-
-  // Like-Funktion mit localStorage-Schutz
-  function handleLike() {
-    if (localStorage.getItem("voted") === "true") {
-      alert("Du hast bereits abgestimmt!");
-      return;
+    function acceptCookies() {
+        document.cookie = "cookies-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+        document.getElementById('cookie-banner').style.display = 'none';
     }
 
-    db.collection("votes").doc("gesamt").update({
-      likes: firebase.firestore.FieldValue.increment(1)
-    }).then(() => {
-      localStorage.setItem("voted", "true");
-      loadVotes(); // Zum Aktualisieren der Anzeige
-    });
-  }
-
-  // Dislike-Funktion mit localStorage-Schutz
-  function handleDislike() {
-    if (localStorage.getItem("voted") === "true") {
-      alert("Du hast bereits abgestimmt!");
-      return;
+    function rejectCookies() {
+        document.cookie = "cookies-accepted=false; path=/; max-age=" + 60 * 60 * 24 * 365;
+        document.getElementById('cookie-banner').style.display = 'none';
     }
 
-    db.collection("votes").doc("gesamt").update({
-      dislikes: firebase.firestore.FieldValue.increment(1)
-    }).then(() => {
-      localStorage.setItem("voted", "true");
-      loadVotes(); // Zum Aktualisieren der Anzeige
-    });
-  }
-
-  window.onload = function () {
-    loadVotes();
-  };
+    window.onload = function () {
+        if (!document.cookie.split('; ').find(row => row.startsWith('cookies-accepted='))) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    };
 </script>
-
 
 </body>
 </html>
