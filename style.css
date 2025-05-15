@@ -71,10 +71,10 @@ nav a:hover {
 section {
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(29, 29, 29, 0.6);
     max-width: 800px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(29, 29, 29, 0.5);
 }
 
 h2 {
