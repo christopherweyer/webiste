@@ -83,36 +83,6 @@ h2 {
     font-size: 28px;
 }
 
-/* Like/Dislike Buttons */
-#like-dislike-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-button {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.1s ease-in-out;
-    color: white;
-}
-
-#like-btn {
-    background-color: #4CAF50;
-}
-
-#dislike-btn {
-    background-color: #f44336;
-}
-
-button:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
-
 /* Dokumentenliste */
 .dokumente-container {
     display: flex;
