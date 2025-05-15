@@ -58,7 +58,7 @@
 <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-firestore.js"></script>
 
 <script>
-  // Firebase-Konfiguration (dieser Schlüssel ist öffentlich verwendbar)
+  // Firebase-Konfiguration
   const firebaseConfig = {
     apiKey: "AIzaSyAfi2Pta5-mMi5xT6-NX1zM5GqG7zvJ3yE",
     authDomain: "webseite-72b69.firebaseapp.com",
@@ -69,72 +69,55 @@
     measurementId: "G-49CQGYE2F6"
   };
 
-  // Initialisierung
-  const app = firebase.initializeApp(firebaseConfig);
+  // Firebase initialisieren
+  firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
 
-  function acceptCookies() {
-    document.cookie = "cookies-accepted=true; path=/; max-age=" + 60 * 60 * 24 * 365;
-    document.getElementById('cookie-banner').style.display = 'none';
+  // Daten beim Laden anzeigen
+  async function loadVotes() {
+    const doc = await db.collection("votes").doc("gesamt").get();
+    if (doc.exists) {
+      const data = doc.data();
+      document.getElementById("like-count").innerText = data.likes || 0;
+      document.getElementById("dislike-count").innerText = data.dislikes || 0;
+    }
   }
 
-  function rejectCookies() {
-    document.cookie = "cookies-accepted=false; path=/; max-age=" + 60 * 60 * 24 * 365;
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
-
+  // Like-Funktion mit localStorage-Schutz
   function handleLike() {
-    if (document.cookie.includes("voted=true")) {
+    if (localStorage.getItem("voted") === "true") {
       alert("Du hast bereits abgestimmt!");
       return;
     }
-
-    const likeCountElement = document.getElementById('like-count');
-    let likeCount = parseInt(likeCountElement.innerText);
-    likeCount++;
-    likeCountElement.innerText = likeCount;
 
     db.collection("votes").doc("gesamt").update({
       likes: firebase.firestore.FieldValue.increment(1)
+    }).then(() => {
+      localStorage.setItem("voted", "true");
+      loadVotes(); // Zum Aktualisieren der Anzeige
     });
-
-    document.cookie = "voted=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
   }
 
+  // Dislike-Funktion mit localStorage-Schutz
   function handleDislike() {
-    if (document.cookie.includes("voted=true")) {
+    if (localStorage.getItem("voted") === "true") {
       alert("Du hast bereits abgestimmt!");
       return;
     }
 
-    const dislikeCountElement = document.getElementById('dislike-count');
-    let dislikeCount = parseInt(dislikeCountElement.innerText);
-    dislikeCount++;
-    dislikeCountElement.innerText = dislikeCount;
-
     db.collection("votes").doc("gesamt").update({
       dislikes: firebase.firestore.FieldValue.increment(1)
+    }).then(() => {
+      localStorage.setItem("voted", "true");
+      loadVotes(); // Zum Aktualisieren der Anzeige
     });
-
-    document.cookie = "voted=true; max-age=" + 60 * 60 * 24 * 365 + "; path=/";
   }
 
   window.onload = function () {
-    // Cookie-Banner anzeigen
-    if (!document.cookie.split('; ').find(row => row.startsWith('cookies-accepted='))) {
-      document.getElementById('cookie-banner').style.display = 'block';
-    }
-
-    // Zähler aus Firestore laden
-    db.collection("votes").doc("gesamt").get().then((doc) => {
-      if (doc.exists) {
-        const data = doc.data();
-        document.getElementById('like-count').innerText = data.likes || 0;
-        document.getElementById('dislike-count').innerText = data.dislikes || 0;
-      }
-    });
+    loadVotes();
   };
 </script>
+
 
 </body>
 </html>
