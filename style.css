@@ -184,17 +184,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Cookie-Banner */
-#cookie-banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000;
-}
+
 
 /* Responsives Layout für kleinere Bildschirme */
 @media (max-width: 600px) {
